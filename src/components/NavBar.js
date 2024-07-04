@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import { GithubIcon, LinkedInIcon, PinterestIcon, TwitterIcon } from "./Icons";
+import { GithubIcon, LinkedInIcon, MediumIcon, TwitterIcon } from "./Icons";
 import { motion } from "framer-motion";
 const CustomLink = ({ href, title, className }) => {
   const router = useRouter();
@@ -33,7 +33,7 @@ const Navbar = () => {
 
       <nav className="flex items-center justify-center flex-wrap">
         <motion.a
-          href="https://twitter.com"
+          href="https://twitter.com/anamol_soman"
           target={"_blank"}
           className="w-6 mx-3"
           whileHover={{ y: -2 }}
@@ -42,7 +42,7 @@ const Navbar = () => {
           <TwitterIcon />
         </motion.a>{" "}
         <motion.a
-          href="https://twitter.com"
+          href="https://github.com/anamolsoman"
           target={"_blank"}
           className="w-6 mx-3"
           whileHover={{ y: -2 }}
@@ -51,7 +51,7 @@ const Navbar = () => {
           <GithubIcon />
         </motion.a>{" "}
         <motion.a
-          href="https://twitter.com"
+          href="https://www.linkedin.com/in/anamol-soman-a0072718a/"
           target={"_blank"}
           className="w-6 mx-3"
           whileHover={{ y: -2 }}
@@ -60,13 +60,14 @@ const Navbar = () => {
           <LinkedInIcon />
         </motion.a>{" "}
         <motion.a
-          href="https://twitter.com"
+          title="Medium"
+          href="https://medium.com/@anamolsoman2"
           target={"_blank"}
           className="w-6 ml-3"
           whileHover={{ y: -2 }}
           whileTap={{ scale: 0.9 }}
         >
-          <PinterestIcon />
+          <MediumIcon />
         </motion.a>{" "}
       </nav>
       <div className="absolute left-[50%] top-4 translate-x-[-50%]">
