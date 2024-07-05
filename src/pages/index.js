@@ -5,6 +5,7 @@ import ProfilePic from "../../public/images/profile/developer-pic-1.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
+import Footer from "@/components/Footer";
 export default function Home() {
   return (
     <>
@@ -14,7 +15,7 @@ export default function Home() {
       </Head>
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout className="pt-0">
-          <div className="flex items-center justify-between w-full">
+          <div className="flex flex-wrap items-center justify-between w-full">
             <div className="w-1/2 ">
               <Image
                 src={ProfilePic}
@@ -54,6 +55,7 @@ export default function Home() {
           </div>
         </Layout>
       </main>
+      <Footer />
     </>
   );
 }
