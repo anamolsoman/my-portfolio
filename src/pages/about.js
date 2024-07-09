@@ -40,7 +40,7 @@ function about(props) {
         <meta name="description" content="about anamol soman" />
       </Head>
       <main className="flex w-full items-center justify-center">
-        <Layout className="pt-16">
+        <Layout className="pt-16 pb-0">
           <AnimatedText
             text="Passion Fuels Purpose!"
             className="mb-16"
