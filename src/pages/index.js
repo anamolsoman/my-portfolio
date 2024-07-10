@@ -5,6 +5,7 @@ import ProfilePic from "../../public/images/profile/developer-pic-1.png";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
+
 export default function Home() {
   return (
     <>
@@ -28,10 +29,10 @@ export default function Home() {
                 className="!text-6xl !text-left"
               />
               <p className="my-4 text-base font-medium">
-                As a skilled full-stack developer, I am dedicated to turning
-                ideas into innovative web applications. Explore my latest
-                projects and articles, showcasing my expertise in React.js and
-                web development.
+                As a skilled frontend developer, I am dedicated to turning ideas
+                into innovative web applications. Explore my latest projects and
+                articles, showcasing my expertise in ReactJs, VueJS and web
+                development.
               </p>
               <div className="flex items-center self-start mt-2">
                 <Link
