@@ -14,7 +14,11 @@ const FramerMotionImg = motion(Image);
 
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
-    <li className="col-span-1 w-full border border-solid border-dark bg-light dark:border-light dark:bg-dark  p-4 rounded-2xl">
+    <li
+      className="col-span-1 w-full border border-solid border-dark bg-light
+     dark:border-light dark:bg-dark  p-4 rounded-2xl
+     "
+    >
       <Link
         href={link}
         target="_blank"
@@ -109,7 +113,7 @@ const ArticleList = (props) => {
         <Layout className="pt-16">
           <AnimatedText
             text="Words Can Change The World! "
-            className="mb-16"
+            className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           ></AnimatedText>
           <ul className="grid grid-cols-2 gap-16">
             {blogs.map((blog, index) => {
