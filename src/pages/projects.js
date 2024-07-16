@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
 import projectImg from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import TransitionEffect from "@/components/TransitionEffect";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
@@ -118,6 +119,7 @@ function projects(props) {
         <title>Anamol Soman | Projects Page</title>
         <meta name="description" content="about anamol soman" />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText

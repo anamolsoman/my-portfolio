@@ -9,7 +9,8 @@ import articleImg2 from "../../public/images/articles/form validation in reactjs
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import axios from "axios";
-
+import TransitionEffect from "@/components/TransitionEffect";
+import { LoaderImg } from "../components/Icons";
 const FramerMotionImg = motion(Image);
 
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
@@ -37,7 +38,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         ></FramerMotionImg>
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-2 hover:underline dark:text-light">
+        <h2 className="capitalize text-2xl font-bold my-2 hover:underline dark:text-light xs:text-lg">
           {title}
         </h2>
       </Link>
@@ -52,6 +53,7 @@ const ArticleList = (props) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    setLoading(true);
     const fetchBlogs = async () => {
       try {
         const response = await axios.get("/api/blogs");
@@ -65,10 +67,6 @@ const ArticleList = (props) => {
 
     fetchBlogs();
   }, []);
-
-  useEffect(() => {
-    console.log(blogs);
-  }, [blogs]);
 
   function extractFirstImageUrl(htmlString) {
     // Create a new DOM parser
@@ -109,26 +107,34 @@ const ArticleList = (props) => {
         <title>Anamol Soman | Articles Page</title>
         <meta name="description" content="about anamol soman" />
       </Head>
+      <TransitionEffect />
       <main className="w-full mb-16 flex  flex-col overflow-hidden items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText
             text="Words Can Change The World! "
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           ></AnimatedText>
-          <ul className="grid grid-cols-2 gap-16">
-            {blogs.map((blog, index) => {
-              return (
-                <FeaturedArticle
-                  key={index}
-                  title={blog.title}
-                  summary={getFirstParagraph.apply(blog.content)}
-                  time={blog.pubDate}
-                  link={blog.link}
-                  img={extractFirstImageUrl(blog.content)}
-                />
-              );
-            })}
-          </ul>
+
+          {loading ? (
+            <div className="w-full flex items-center justify-center">
+              <LoaderImg className="fill-dark stroke-dark  dark:fill-light dark:stroke-light w-40" />
+            </div>
+          ) : (
+            <ul className="grid grid-cols-2 gap-16 lg:gap-8 md:grid-cols-1 md:gap-y-16">
+              {blogs.map((blog, index) => {
+                return (
+                  <FeaturedArticle
+                    key={index}
+                    title={blog.title}
+                    summary={getFirstParagraph.apply(blog.content)}
+                    time={blog.pubDate}
+                    link={blog.link}
+                    img={extractFirstImageUrl(blog.content)}
+                  />
+                );
+              })}
+            </ul>
+          )}
         </Layout>
       </main>
     </>
