@@ -76,6 +76,8 @@ function about(props) {
                 src={ProfilePicture}
                 alt="anamol soman"
                 className="rounded-2xl w-full h-auto"
+                priority
+                sizes="(min-width: 768px) 50vw,(min-width: 1200px) 50vw, 33vw"
               />
             </div>
             <div className="col-span-2 flex  flex-col items-end justify-between">

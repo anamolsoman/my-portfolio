@@ -28,6 +28,8 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
           transition={{ duration: 0.2 }}
           width="400"
           height="400"
+          priority
+          sizes="(min-width: 768px) 50vw,(min-width: 1200px) 50vw, 50vw"
         ></FramerMotionImg>
       </Link>
       <Link href={link} target="_blank">
