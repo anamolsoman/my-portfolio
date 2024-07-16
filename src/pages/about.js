@@ -89,7 +89,7 @@ function about(props) {
                   Satisfied Clients
                 </h2>
               </div>{" "}
-              <div className="flex flex-col items-end justify-center">
+              <div className="flex flex-col items-end justify-center  xl:items-center">
                 <span className="inline-block text-7xl md:text-6xl sm:text-5xl xs:text-4xl font-bold">
                   {" "}
                   <AnimateNumbers value={20} />+
@@ -98,7 +98,7 @@ function about(props) {
                   Completed Projects
                 </h2>
               </div>{" "}
-              <div className="flex flex-col items-end justify-center">
+              <div className="flex flex-col items-end justify-center  xl:items-center">
                 <span className="inline-block text-7xl  md:text-6xl sm:text-5xl xs:text-4xl font-bold">
                   {" "}
                   <AnimateNumbers value={5} />+
