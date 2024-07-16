@@ -10,7 +10,7 @@ const Logo = () => {
     <div className="flex">
       <motion.a
         href="https://google.com"
-        className="bg-dark flex w-16 h-16 text-light items-center justify-center rounded-full font-bold text-2xl"
+        className="bg-dark flex w-16 h-16 text-light items-center justify-center rounded-full font-bold text-2xl border border-solid border-transparent dark:border-light"
         whileHover={{
           scale: 1.2,
           backgroundColor: [

@@ -14,7 +14,7 @@ const FramerMotionImg = motion(Image);
 
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
-    <li className="col-span-1 w-full border border-solid border-dark bg-light p-4 rounded-2xl">
+    <li className="col-span-1 w-full border border-solid border-dark bg-light dark:border-light dark:bg-dark  p-4 rounded-2xl">
       <Link
         href={link}
         target="_blank"
@@ -31,7 +31,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         ></FramerMotionImg>
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-2 hover:underline">
+        <h2 className="capitalize text-2xl font-bold my-2 hover:underline dark:text-light">
           {title}
         </h2>
       </Link>

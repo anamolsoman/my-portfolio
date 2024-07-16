@@ -28,7 +28,7 @@ export default function Home() {
                 text="Turning Vision Into Reality With Code And Design."
                 className="!text-6xl !text-left"
               />
-              <p className="my-4 text-base font-medium">
+              <p className="my-4 text-base font-medium dark:text-light">
                 As a skilled frontend developer, I am dedicated to turning ideas
                 into innovative web applications. Explore my latest projects and
                 articles, showcasing my expertise in ReactJs, VueJS and web
@@ -38,15 +38,15 @@ export default function Home() {
                 <Link
                   href="/Anamol_Soman_Frontend_Developer.pdf"
                   target={"_blank"}
-                  className="flex items-center p-2.5 px-6 bg-dark font-semibold text-lg text-light rounded-lg hover:text-dark hover:bg-light
-                  border-2 border-solid border-transparent hover:border-dark"
+                  className="flex items-center p-2.5 px-6 dark:bg-light  bg-dark font-semibold text-lg dark:text-dark text-light rounded-lg hover:text-dark hover:bg-light hover:dark:text-light hover:dark:bg-dark
+                  border-2 border-solid border-transparent hover:border-dark hover:dark:border-light"
                   download={true}
                 >
                   Resume <LinkArrow className={"w-6 ml-1"} />
                 </Link>
                 <Link
                   href="mailto:anamolsoman2@gmail.com"
-                  className="ml-4 text-lg capitalize underline text-dark font-medium"
+                  className="ml-4 text-lg capitalize underline dark:text-light text-dark font-medium"
                 >
                   Contact
                 </Link>

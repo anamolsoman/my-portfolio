@@ -2,8 +2,18 @@ import React from "react";
 import Link from "next/link";
 import Logo from "./Logo";
 import { useRouter } from "next/router";
-import { GithubIcon, LinkedInIcon, MediumIcon, TwitterIcon } from "./Icons";
+import {
+  GithubIcon,
+  LinkedInIcon,
+  MediumIcon,
+  MoonIcon,
+  SunIcon,
+  TwitterIcon,
+} from "./Icons";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import useThemeSwitcher from "./hooks/useThemeSwitcher";
+
 const CustomLink = ({ href, title, className }) => {
   const router = useRouter();
   return (
@@ -11,7 +21,7 @@ const CustomLink = ({ href, title, className }) => {
       {title}
 
       <span
-        className={`h-[1px] inline-block  bg-dark absolute  left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
+        className={`h-[1px] dark:bg-light inline-block  bg-dark absolute  left-0 -bottom-0.5 group-hover:w-full transition-[width] ease duration-300 ${
           router.asPath === href ? "w-full" : "w-0"
         }`}
       >
@@ -22,8 +32,30 @@ const CustomLink = ({ href, title, className }) => {
 };
 
 const Navbar = () => {
+  const [mode, setMode] = useThemeSwitcher();
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <header className="w-full px-32 py-8 font-medium flex items-center justify-between">
+    <header className="w-full px-32 py-8 font-medium flex items-center justify-between dark:bg-dark dark:text-light">
+      {/* <div
+        className="flex flex-col items-center justify-between cursor-pointer"
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span
+          className={`bg-dark dark:bg-light rounded-sm block h-0.5 w-6 my-0.5 ${
+            isOpen ? "rotate-45 translate-y-1" : ""
+          }`}
+        ></span>
+        <span
+          className={`bg-dark dark:bg-light block h-0.5 w-6 my-0.5 ${
+            isOpen ? "hidden" : ""
+          }`}
+        ></span>
+        <span
+          className={`bg-dark dark:bg-light rounded-sm block h-0.5 w-6 my-0.5 ${
+            isOpen ? "-rotate-45 -translate-y-1" : ""
+          }`}
+        ></span>{" "}
+      </div> */}
       <nav>
         <CustomLink href="/" title="Home" className="mr-4" />
         <CustomLink href="/about" title="About" className="mx-4" />
@@ -69,6 +101,18 @@ const Navbar = () => {
         >
           <MediumIcon />
         </motion.a>{" "}
+        <button
+          onClick={() => setMode(mode === "dark" ? "light" : "dark")}
+          className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+            mode === "dark" ? "bg-light text-dark" : "bg-dark text-light"
+          }`}
+        >
+          {mode === "dark" ? (
+            <SunIcon className={"fill-dark"} />
+          ) : (
+            <MoonIcon className={"fill-dark"} />
+          )}
+        </button>
       </nav>
       <div className="absolute left-[50%] top-4 translate-x-[-50%]">
         <Logo />

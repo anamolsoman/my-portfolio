@@ -20,7 +20,7 @@ const Detail = ({ company, companyLink, work, position, time, address }) => {
             {company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75">
+        <span className="capitalize font-medium text-dark/75 dark:text-light/75">
           {time} | {address}
         </span>
         <p className="font-medium w-full">{work}</p>
@@ -45,7 +45,7 @@ function Experience(props) {
       <div ref={ref} className="w-[75%] mx-auto relative">
         <motion.div
           style={{ scaleY: scrollYProgress }}
-          className="bg-dark w-[4px] h-full absolute left-9 top-0 origin-top"
+          className="bg-dark dark:bg-light w-[4px] h-full absolute left-9 top-0 origin-top"
         />
         <ul className="flex flex-col w-full items-start justify-between ml-4">
           <Detail

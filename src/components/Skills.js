@@ -5,10 +5,9 @@ const Skill = ({ name, x, y }) => {
   return (
     <motion.div
       whileHover={{ scale: 1.05 }}
-      className="bg-dark text-light flex items-center justify-center rounded-full py-3 px-6 cursor-pointer absolute"
+      className="bg-dark text-light  dark:bg-light dark:text-dark flex items-center justify-center rounded-full py-3 px-6 cursor-pointer absolute"
       initial={{ x: 0, y: 0 }}
-      whileInView={{ x: x, y: y }}
-      transition={{ duration: 1.5 }}
+      whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
     >
       {name}
     </motion.div>
@@ -19,10 +18,10 @@ function Skills(props) {
   return (
     <>
       <h2 className="font-bold text-8xl mt-64 w-full text-center">Skills</h2>
-      <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight">
+      <div className="w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight dark:bg-circularDark">
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="bg-dark text-light flex items-center justify-center rounded-full p-6 cursor-pointer"
+          className="bg-dark text-light dark:bg-light dark:text-dark flex items-center justify-center rounded-full p-6 cursor-pointer"
         >
           Web
         </motion.div>

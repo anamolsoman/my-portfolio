@@ -39,7 +39,7 @@ function about(props) {
         <title>Anamol Soman | About Page</title>
         <meta name="description" content="about anamol soman" />
       </Head>
-      <main className="flex w-full items-center justify-center">
+      <main className="flex w-full items-center justify-center dark:text-light">
         <Layout className="pt-16 pb-0">
           <AnimatedText
             text="Passion Fuels Purpose!"
@@ -47,7 +47,7 @@ function about(props) {
           ></AnimatedText>
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 Biography
               </h2>
               <p className="font-medium">
@@ -70,8 +70,8 @@ function about(props) {
                 your next project.
               </p>
             </div>
-            <div className="col-span-3 relative rounded-2xl h-max p-8 border-solid  border-2 border-dark bg-light">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%]  rounded-[2rem] bg-dark" />
+            <div className="col-span-3 relative rounded-2xl h-max p-8 border-solid  border-2 border-dark bg-light dark:border-light dark:bg-dark">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%]  rounded-[2rem] bg-dark dark:bg-light" />
               <Image
                 src={ProfilePicture}
                 alt="anamol soman"
@@ -83,7 +83,7 @@ function about(props) {
                 <span className="inline-block text-7xl font-bold">
                   <AnimateNumbers value={50} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   Satisfied Clients
                 </h2>
               </div>{" "}
@@ -92,7 +92,7 @@ function about(props) {
                   {" "}
                   <AnimateNumbers value={20} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   Completed Projects
                 </h2>
               </div>{" "}
@@ -101,7 +101,7 @@ function about(props) {
                   {" "}
                   <AnimateNumbers value={5} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75">
                   Years of Experience
                 </h2>
               </div>
