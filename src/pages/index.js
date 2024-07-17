@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Anamol Soman's portfolio. Experienced frontend developer with 5 years of proficiency in creating responsive and user-friendly web applications."
+          content="Anamol Soman portfolio. Experienced frontend developer with 5 years of proficiency in creating responsive and user-friendly web applications."
         />
         <meta
           name="description"
