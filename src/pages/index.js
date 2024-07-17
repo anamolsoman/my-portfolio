@@ -25,6 +25,7 @@ export default function Home() {
         <meta name="author" content="Anamol Soman" />
       </Head>
       <TransitionEffect />
+
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex flex-wrap items-center justify-between w-full  lg:flex-col">
