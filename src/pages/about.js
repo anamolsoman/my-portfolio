@@ -63,7 +63,7 @@ function about(props) {
                 Biography
               </h2>
               <p className="font-medium">
-                Hi, I'm Anamol Soman, an experienced frontend developer with 5
+                Hi, Im Anamol Soman, an experienced frontend developer with 5
                 years of proficiency in creating responsive and user-friendly
                 web applications. Demonstrated expertise in HTML, CSS,
                 JavaScript, and modern frameworks like ReactJS and VueJS.
@@ -72,11 +72,11 @@ function about(props) {
                 I have a proven track record of delivering high-quality projects
                 that exceed client expectations and enhance user experiences. I
                 believe that web development is about more than just writing
-                code – it's about solving problems and creating intuitive,
+                code – its about solving problems and creating intuitive,
                 enjoyable experiences for users.
               </p>
               <p className="font-medium">
-                Whether I'm working on a website, mobile app, or other digital
+                Whether Im working on a website, mobile app, or other digital
                 product, I bring my commitment to excellence and user-centered
                 thinking to every project I work on. I look forward to the
                 opportunity to bring my skills and passion to your next project.
