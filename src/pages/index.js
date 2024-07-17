@@ -6,6 +6,7 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
 import TransitionEffect from "@/components/TransitionEffect";
+import MediumStats from "@/components/MediumStats";
 
 export default function Home() {
   return (
@@ -68,6 +69,7 @@ export default function Home() {
               </div>
             </div>
           </div>
+          <MediumStats />
         </Layout>
       </main>
     </>
