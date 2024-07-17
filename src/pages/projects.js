@@ -5,13 +5,15 @@ import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
 import { GithubIcon } from "@/components/Icons";
-import projectImg from "../../public/images/projects/crypto-screener-cover-image.jpg";
+import projectImg from "../../public/images/projects/security.jpg";
+import ImageGalleryImg from "../../public/images/projects/image-gallery.png";
+import PortfolioImg from "../../public/images/projects/portfolio.JPG";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article
-      className="w-full relative bg-light dark:bg-dark dark:border-light flex items-center justify-between border p-12 border-solid border-dark rounded-3xl 
+      className="w-full relative bg-light dark:bg-dark dark:border-light flex items-center justify-between border p-10 border-solid border-dark rounded-3xl 
     lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
     >
       <div
@@ -116,8 +118,18 @@ function projects(props) {
   return (
     <>
       <Head>
-        <title>Anamol Soman | Projects Page</title>
-        <meta name="description" content="about anamol soman" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Explore the projects of Anamol Soman, showcasing expertise in HTML, CSS, JavaScript, ReactJS, and VueJS. Proven track record of delivering high-quality projects."
+        />
+        <meta
+          name="keywords"
+          content="Anamol Soman, projects, frontend developer, web development, HTML, CSS, JavaScript, ReactJS, VueJS"
+        />
+        <meta name="author" content="Anamol Soman" />
+        <title>Projects by Anamol Soman | Frontend Developer</title>
       </Head>
       <TransitionEffect />
       <main className="w-full mb-16 flex items-center justify-center">
@@ -130,13 +142,11 @@ function projects(props) {
           <div className="grid grid-cols-12 gap-24 gap-y-32  xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
-                img={projectImg}
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-              It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-              local currency."
-                link="/"
-                github="/"
+                img={ImageGalleryImg}
+                title="Responsive Image Gallery: NPM Package"
+                summary="Vuejs image gallery is having some customizable options so you can make changes as per your requirements."
+                link="https://www.npmjs.com/package/vuejs-image-gallery"
+                github="https://github.com/anamolsoman/vuejs-image-gallery"
                 type="Featured Project"
               />
             </div>
@@ -144,36 +154,34 @@ function projects(props) {
               {" "}
               <Project
                 img={projectImg}
-                title="Crypto Screener Application"
+                title="Cloud Security and Scaling"
                 link="/"
                 github="/"
-                type="Featured Project"
+                type="Dashboard"
               />{" "}
             </div>
             <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
                 img={projectImg}
-                title="Crypto Screener Application"
+                title="E-Commerce Website"
                 link="/"
                 github="/"
-                type="Featured Project"
+                type="E-commerce"
               />{" "}
             </div>{" "}
             <div className="col-span-12">
               {" "}
               <FeaturedProject
-                img={projectImg}
-                title="Crypto Screener Application"
-                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-              It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-              local currency."
+                img={PortfolioImg}
+                title="Personal Portfolio"
+                summary="Developed a personal portfolio website showcasing my skills, projects, and professional experience using HTML, CSS, JavaScript, and ReactJS. The responsive design ensures an optimal user experience across all devices."
                 link="/"
-                github="/"
+                github="https://github.com/anamolsoman/my-portfolio"
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
+            {/* <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
                 img={projectImg}
@@ -192,7 +200,7 @@ function projects(props) {
                 github="/"
                 type="Featured Project"
               />{" "}
-            </div>
+            </div> */}
           </div>
         </Layout>
       </main>

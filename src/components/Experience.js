@@ -50,53 +50,19 @@ function Experience(props) {
         <ul className="flex flex-col w-full items-start justify-between ml-4 xs:ml-2">
           <Detail
             position="Software Engineer"
-            company="Google"
-            time="2022-Present"
-            address="Mountain View, CA"
-            companyLink="www.google.com"
-            work="Worked on a team responsible for developing new features for Google's 
-      search engine, including improving the accuracy and relevance of search results and 
-      developing new tools for data analysis and visualization."
+            company="Opcito"
+            time="2021-Present"
+            address="Pune, India"
+            companyLink="www.opcito.com"
+            work="Developed comprehensive frontend projects from scratch, adhering to best practices and implementing a well-organized directory structure for efficient maintenance and scalability. • Developed fully responsive web pages, optimizing performance and user experience on both desktop and mobile devices."
           />
           <Detail
-            position="Software Engineer"
-            company="Google"
-            time="2022-Present"
-            address="Mountain View, CA"
-            companyLink="www.google.com"
-            work="Worked on a team responsible for developing new features for Google's 
-    search engine, including improving the accuracy and relevance of search results and 
-    developing new tools for data analysis and visualization."
-          />
-          <Detail
-            position="Software Engineer"
-            company="Google"
-            time="2022-Present"
-            address="Mountain View, CA"
-            companyLink="www.google.com"
-            work="Worked on a team responsible for developing new features for Google's 
-  search engine, including improving the accuracy and relevance of search results and 
-  developing new tools for data analysis and visualization."
-          />
-          <Detail
-            position="Software Engineer"
-            company="Google"
-            time="2022-Present"
-            address="Mountain View, CA"
-            companyLink="www.google.com"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
-          />
-          <Detail
-            position="Software Engineer"
-            company="Google"
-            time="2022-Present"
-            address="Mountain View, CA"
-            companyLink="www.google.com"
-            work="Worked on a team responsible for developing new features for Google's 
-search engine, including improving the accuracy and relevance of search results and 
-developing new tools for data analysis and visualization."
+            position="Associate Software Engineer"
+            company="Astuter "
+            time="2019-2021"
+            address="Pune, India"
+            companyLink="www.astuter.com"
+            work="Design and implement interactive dashboards with Vue.js/Nuxt.js to provide comprehensive data visualization and analytics for effective decision-making in various aspects of business management. • Implemented SEO best practices within the Vue/Nuxt e-commerce website, optimizing meta tags, structured data, and content to enhance search engine visibility and drive organic traffic growth"
           />
         </ul>
       </div>

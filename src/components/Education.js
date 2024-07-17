@@ -46,25 +46,22 @@ function Education(props) {
         />
         <ul className="flex flex-col w-full items-start justify-between ml-4 xs:ml-2">
           <Detail
-            type=" Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-Intelligence."
+            type=" Bachelor Of Engineering In Computer Science"
+            time="2016-2019"
+            place="University of Amravati"
+            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering"
           />{" "}
           <Detail
-            type=" Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-Intelligence."
+            type=" Diploma In Computer Science"
+            time="2012-2016"
+            place="P.R.Pote College, Amravati "
+            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering."
           />{" "}
           <Detail
-            type=" Bachelor Of Science In Computer Science"
-            time="2016-2020"
-            place="Massachusetts Institute Of Technology (MIT)"
-            info="Relevant courses included Data Structures and Algorithms, Computer Systems Engineering, and Artificial 
-Intelligence."
+            type="High School Education"
+            time="2012"
+            place="Amravati"
+            info="I focused on Mathematics, Physics, and Computer Science, laying a solid groundwork in analytical thinking and problem-solving."
           />
         </ul>
       </div>

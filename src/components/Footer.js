@@ -7,7 +7,9 @@ function Footer(props) {
         {new Date().getFullYear()} &copy; All Rights Reserved.
       </div>
       <div className="">Build By Anamol Soman</div>
-      <div className="">Call Me</div>
+      <div className="underline">
+        <a href="tel:8806715199">Call Me</a>
+      </div>
     </div>
   );
 }

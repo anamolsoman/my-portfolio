@@ -104,8 +104,18 @@ const ArticleList = (props) => {
   return (
     <>
       <Head>
-        <title>Anamol Soman | Articles Page</title>
-        <meta name="description" content="about anamol soman" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+          name="description"
+          content="Read blogs by Anamol Soman on web development, frontend technologies, HTML, CSS, JavaScript, ReactJS, VueJS, and more."
+        />
+        <meta
+          name="keywords"
+          content="Anamol Soman, blogs, web development, frontend technologies, HTML, CSS, JavaScript, ReactJS, VueJS"
+        />
+        <meta name="author" content="Anamol Soman" />
+        <title>Blogs by Anamol Soman | Frontend Developer</title>
       </Head>
       <TransitionEffect />
       <main className="w-full mb-16 flex  flex-col overflow-hidden items-center justify-center">
