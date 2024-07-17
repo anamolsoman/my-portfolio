@@ -2,7 +2,8 @@ const axios = require("axios");
 
 exports.handler = async function (event, context) {
   const mediumUsername = "anamolsoman2";
-  const mediumApiToken = "YOUR_MEDIUM_API_TOKEN";
+  const mediumApiToken =
+    "23e561bd6c7fe5f6a022d4d0519f21d8242520308b3108dc535d9008d8100dcc7";
 
   try {
     // Step 1: Fetch User Information
