@@ -23,6 +23,22 @@ export default function Home() {
           content="Anamol Soman, frontend developer, web development, HTML, CSS, JavaScript, ReactJS, VueJS"
         />
         <meta name="author" content="Anamol Soman" />
+        {/* Google Analytics Script */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-YSQ6QJPRS8"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-YSQ6QJPRS8');
+            `,
+          }}
+        />
       </Head>
       <TransitionEffect />
 
