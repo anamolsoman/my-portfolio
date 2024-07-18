@@ -76,10 +76,10 @@ export default function Home() {
                   Resume <LinkArrow className={"w-6 ml-1"} />
                 </Link>
                 <Link
-                  href="mailto:anamolsoman2@gmail.com"
+                  href="/schedule-meeting"
                   className="ml-4 text-lg capitalize underline dark:text-light text-dark font-medium md:text-base"
                 >
-                  Contact
+                  Book a Slot{" "}
                 </Link>
               </div>
             </div>

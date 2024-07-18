@@ -25,13 +25,12 @@ export default function App({ Component, pageProps }) {
       >
         <Navbar></Navbar>
         <AnimatePresence mode="wait">
-          <div class="fixed bottom-2 right-2 p-4 z-50  hidden sm:flex md:flex">
+          <div className="fixed bottom-2 right-2 p-4 z-50  hidden sm:flex md:flex">
             <a href="tel:8806715199">
               <motion.button
                 whileHover={{ y: -2 }}
                 whileTap={{ scale: 0.9 }}
-                class="bg-dark dark:bg-light text-white rounded-full w-12 h-12 flex items-center justify-center"
-                onclick="backToTop()"
+                className="bg-dark dark:bg-light text-white rounded-full w-12 h-12 flex items-center justify-center"
               >
                 <CallIcon className={"m-2 fill-white dark:fill-dark"} />
               </motion.button>
