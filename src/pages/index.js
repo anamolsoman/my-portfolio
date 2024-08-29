@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Anamol Soman | Frontend Developer Portfolio</title>
+        <title>Anamol Soman | Senior Frontend Developer</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
