@@ -4,8 +4,6 @@ import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import Link from "next/link";
 import Image from "next/image";
-import articleImg from "../../public/images/articles/pagination component in reactjs.jpg";
-import articleImg2 from "../../public/images/articles/form validation in reactjs using custom react hook.png";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import axios from "axios";

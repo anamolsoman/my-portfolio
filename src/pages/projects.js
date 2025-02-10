@@ -8,6 +8,7 @@ import { GithubIcon } from "@/components/Icons";
 import projectImg from "../../public/images/projects/security.jpg";
 import ImageGalleryImg from "../../public/images/projects/image-gallery.png";
 import PortfolioImg from "../../public/images/projects/portfolio.JPG";
+import CryptoBrew from "../../public/images/projects/crypto-brew.png";
 import TransitionEffect from "@/components/TransitionEffect";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
@@ -139,7 +140,27 @@ function projects(props) {
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           ></AnimatedText>
 
-          <div className="grid grid-cols-12 gap-24 gap-y-32  xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+          <div className="grid grid-cols-12 gap-14 gap-y-12  xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
+            <div className="col-span-12">
+              <FeaturedProject
+                img={CryptoBrew}
+                title="Crypto Brew - Decentralized App"
+                summary="CryptoBrew is a decentralized application (dApp) built using Web3 concepts, By using Ethereum smart contracts, CafeBrew allows creators to generate a unique payment link, making it easy for supporters to send secure and transparent microtransactions directly to the creator’s wallet."
+                link="https://cryptobrew.netlify.app/"
+                github="https://github.com/anamolsoman/web3-decentralized-app"
+                type="Developed on Web 3.0"
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                img={PortfolioImg}
+                title="Personal Portfolio"
+                summary="Developed a personal portfolio website showcasing my skills, projects, and professional experience using HTML, CSS, JavaScript, and ReactJS. The responsive design ensures an optimal user experience across all devices."
+                link="/"
+                github="https://github.com/anamolsoman/my-portfolio"
+                type="Featured Project"
+              />
+            </div>
             <div className="col-span-12">
               <FeaturedProject
                 img={ImageGalleryImg}
@@ -150,7 +171,7 @@ function projects(props) {
                 type="Featured Project"
               />
             </div>
-            <div className="col-span-6 sm:col-span-12">
+            {/* <div className="col-span-6 sm:col-span-12">
               {" "}
               <Project
                 img={projectImg}
@@ -169,38 +190,7 @@ function projects(props) {
                 github="/"
                 type="E-commerce"
               />{" "}
-            </div>{" "}
-            <div className="col-span-12">
-              {" "}
-              <FeaturedProject
-                img={PortfolioImg}
-                title="Personal Portfolio"
-                summary="Developed a personal portfolio website showcasing my skills, projects, and professional experience using HTML, CSS, JavaScript, and ReactJS. The responsive design ensures an optimal user experience across all devices."
-                link="/"
-                github="https://github.com/anamolsoman/my-portfolio"
-                type="Featured Project"
-              />
-            </div>
-            {/* <div className="col-span-6 sm:col-span-12">
-              {" "}
-              <Project
-                img={projectImg}
-                title="Crypto Screener Application"
-                link="/"
-                github="/"
-                type="Featured Project"
-              />{" "}
-            </div>
-            <div className="col-span-6 sm:col-span-12">
-              {" "}
-              <Project
-                img={projectImg}
-                title="Crypto Screener Application"
-                link="/"
-                github="/"
-                type="Featured Project"
-              />{" "}
-            </div> */}
+            </div>{" "} */}
           </div>
         </Layout>
       </main>

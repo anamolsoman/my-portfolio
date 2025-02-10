@@ -11,20 +11,36 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Anamol Soman | Frontend Developer Portfolio</title>
+        <title>Anamol Soman | Senior Frontend Developer</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta
           name="description"
-          content="Anamol Soman's portfolio. Experienced frontend developer with 5 years of proficiency in creating responsive and user-friendly web applications."
+          content="Anamol Soman portfolio. Experienced frontend developer with 5 years of proficiency in creating responsive and user-friendly web applications."
         />
         <meta
           name="description"
           content="Anamol Soman, frontend developer, web development, HTML, CSS, JavaScript, ReactJS, VueJS"
         />
         <meta name="author" content="Anamol Soman" />
+        {/* Google Analytics Script */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-YSQ6QJPRS8"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-YSQ6QJPRS8');
+            `,
+          }}
+        />
       </Head>
       <TransitionEffect />
+
       <main className="flex items-center text-dark w-full min-h-screen">
         <Layout className="pt-0 md:pt-16 sm:pt-8">
           <div className="flex flex-wrap items-center justify-between w-full  lg:flex-col">
@@ -59,10 +75,10 @@ export default function Home() {
                   Resume <LinkArrow className={"w-6 ml-1"} />
                 </Link>
                 <Link
-                  href="mailto:anamolsoman2@gmail.com"
+                  href="/schedule-meeting"
                   className="ml-4 text-lg capitalize underline dark:text-light text-dark font-medium md:text-base"
                 >
-                  Contact
+                  Book a Slot{" "}
                 </Link>
               </div>
             </div>

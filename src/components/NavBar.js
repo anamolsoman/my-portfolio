@@ -86,6 +86,20 @@ const Navbar = () => {
           }`}
         ></span>{" "}
       </div>
+      <div className="hidden lg:flex">
+        <button
+          onClick={() => setMode(mode === "dark" ? "light" : "dark")}
+          className={`ml-3 flex items-center justify-center rounded-full p-1 ${
+            mode === "dark" ? "bg-light text-dark" : "bg-dark text-light"
+          }`}
+        >
+          {mode === "dark" ? (
+            <SunIcon className={"fill-dark"} />
+          ) : (
+            <MoonIcon className={"fill-dark"} />
+          )}
+        </button>
+      </div>
       <div className="w-full flex justify-between items-center lg:hidden">
         <nav>
           <CustomLink href="/" title="Home" className="mr-4" />
@@ -151,7 +165,7 @@ const Navbar = () => {
           initial={{ scale: 0, opacity: 0, x: "-50%", y: "-50%" }}
           animate={{ scale: 1, opacity: 1 }}
           className="min-w-[70vw] flex flex-col fixed z-30 left-1/2 top-1/2 justify-between items-center -translate-x-1/2 -translate-y-1/2
-      bg-dark/90 dark:bg-light/75 rounded-lg background-blur-md py-32"
+      bg-dark/95 dark:bg-light/95 rounded-lg background-blur-md py-32"
         >
           <nav className="flex flex-col items-center justify-center">
             <CustomMobileLink
